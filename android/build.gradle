@@ -1,0 +1,36 @@
+// android/build.gradle
+
+buildscript {
+    ext.kotlin_version = '1.9.0' // تحديد إصدار Kotlin
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.1.0" // تحديد إصدار Gradle Plugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // إضافة تبعيات أخرى إذا لزم الأمر
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    // إعداد دليل البناء
+    rootProject.buildDir = '../build'
+
+    // تكوين المشاريع الفرعية
+    subprojects {
+        project.buildDir = "${rootProject.buildDir}/${project.name}"
+    }
+
+    // ضمان التقييم يعتمد على وحدة التطبيق
+    subprojects {
+        project.evaluationDependsOn(':app')
+    }
+}

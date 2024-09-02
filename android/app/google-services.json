@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1026127038441",
+    "project_id": "brshopping-c27a5",
+    "storage_bucket": "brshopping-c27a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026127038441:android:d9c0c45b2f21db4e592d78",
+        "android_client_info": {
+          "package_name": "com.AlmirTechnology.Brshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7M5-JK_e5thYgqmDfMSxkJWF11b7UGu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
